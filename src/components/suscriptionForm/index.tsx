@@ -68,7 +68,7 @@ const SuscriptionForm = () => {
 
     return (
         <Banner>
-            <FormWithStyles onSubmit={handleSubmit}>
+            <FormWithStyles onSubmit={handleSubmit} noValidate>
                 <LabelForm htmlFor="titulo">FORMULARIO DE SUSCRIPCIÓN</LabelForm>
 
                 <InputForm 

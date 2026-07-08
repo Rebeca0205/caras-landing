@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import Header from './components/header'
 import SuscriptionForm from './components/suscriptionForm'
 import FeaturedSection from './components/featuredSection'
