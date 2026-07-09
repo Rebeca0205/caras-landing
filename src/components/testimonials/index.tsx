@@ -5,12 +5,12 @@ import { CommentalistsNames, Comments, FlexTestimonials, GridTestimonials, IMGco
 
 const Testimonials = () => {
     return(
-        <FlexTestimonials>
-            <h3>Comentarios de nuestros suscriptores</h3>
+        <FlexTestimonials aria-labelledby="Sección-de-Comentarios-de-Suscriptores">
+            <h2 id='Sección-de-Comentarios-de-Suscriptores'>Comentarios de nuestros suscriptores</h2>
             <GridTestimonials>
                 <TestimonialsConatiner>
                     <IMGcontainer>
-                        <IMGpeople src={PrimerComentario} alt="PrimerComentario"/>
+                        <IMGpeople src={PrimerComentario} alt="Foto de perfil de Martín Díaz"/>
                     </IMGcontainer>
                     <CommentalistsNames>Martín Díaz</CommentalistsNames>
                     <Comments>¡La mejor newsletter! Sin ruido, sin relleno, solo contenido realmente útil. 
@@ -19,7 +19,7 @@ const Testimonials = () => {
 
                 <TestimonialsConatiner>
                     <IMGcontainer>
-                        <IMGpeople src={SegundoComentario} alt="SegundoComentario"/>
+                        <IMGpeople src={SegundoComentario} alt="Foto de perfil de Camila Herrera"/>
                     </IMGcontainer>
                     <CommentalistsNames>Camila Herrera</CommentalistsNames>
                     <Comments>No hay mejor manera de empezar la semana que con CARAS en mi bandeja de entrada. 
@@ -28,7 +28,7 @@ const Testimonials = () => {
                 
                 <TestimonialsConatiner>
                     <IMGcontainer>
-                        <IMGpeople src={TercerComentario} alt="TercerComentario"/>
+                        <IMGpeople src={TercerComentario} alt="Foto de perfil de Julia Rojas"/>
                     </IMGcontainer>
                     <CommentalistsNames>Julia Rojas</CommentalistsNames>
                     <Comments>Me suscribí sin muchas expectativas, pero ahora espero cada número con ansias. 

@@ -15,16 +15,23 @@ const FormWithStyles = styled.form`
     width: 40%;
     margin: 0 auto;
 
-    padding: 80px 10px;
+    padding: 50px 10px;
     box-sizing: border-box;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
     border: 1px solid ${({ theme }) => theme.colors.clear_gray};
     background-color: ${({ theme }) => theme.colors.white};
+
+    @media (prefers-color-scheme: dark){
+        background-color: #1b1a1a;
+        transition: all .25s linear;
+        color: #ffffff;
+    }
 `
 
 const LabelForm = styled.label`
@@ -41,6 +48,12 @@ const InputForm = styled.input`
     margin-bottom: 1rem;
     width: 50%;
     padding: 5px 10px;
+
+    @media (prefers-color-scheme: dark){
+        background-color: #000000;
+        transition: all .25s linear;
+        color: #ffffff;
+    }
 `
 
 const ButtonForm = styled.button`
@@ -50,7 +63,13 @@ const ButtonForm = styled.button`
     font-size: clamp(1rem, 3vw, 1.3rem);
     border-radius: 10px;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+
+    @media (prefers-color-scheme: dark){
+        background-color: #000000;
+        transition: all .25s linear;
+        color: #ffffff;
+    }
 `
 
 const SuccessMessage = styled.p`
@@ -65,6 +84,10 @@ const ErrorMessage = styled.p`
     font-size: clamp(1rem, 3vw, 1.5rem);
 `
 
+const InputLabel = styled.label`
+    font-size: clamp(1rem, 3vw, 1.5rem);
+`
+
 export{
     Banner, 
     FormWithStyles, 
@@ -72,5 +95,6 @@ export{
     InputForm, 
     ButtonForm,
     SuccessMessage,
-    ErrorMessage
+    ErrorMessage,
+    InputLabel
 }

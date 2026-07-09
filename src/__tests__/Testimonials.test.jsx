@@ -19,7 +19,7 @@ describe("Testimonials Component", () =>{
 
 
 
-        const TestimonialsIMG1 = screen.getByAltText("PrimerComentario");
+        const TestimonialsIMG1 = screen.getByAltText("Foto de perfil de Martín Díaz");
         expect(TestimonialsIMG1).toBeInTheDocument();
 
         const TestimonialsComentalists1 = screen.getByText("Martín Díaz");
@@ -31,7 +31,7 @@ describe("Testimonials Component", () =>{
 
 
 
-        const TestimonialsIMG2 = screen.getByAltText("SegundoComentario");
+        const TestimonialsIMG2 = screen.getByAltText("Foto de perfil de Camila Herrera");
         expect(TestimonialsIMG2).toBeInTheDocument();
 
         const TestimonialsComentalists2 = screen.getByText("Camila Herrera");
@@ -43,7 +43,7 @@ describe("Testimonials Component", () =>{
 
         
 
-        const TestimonialsIMG3= screen.getByAltText("TercerComentario");
+        const TestimonialsIMG3= screen.getByAltText("Foto de perfil de Julia Rojas");
         expect(TestimonialsIMG3).toBeInTheDocument();
 
         const TestimonialsComentalists3 = screen.getByText("Julia Rojas");

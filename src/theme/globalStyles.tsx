@@ -21,6 +21,12 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         margin: 0;
+
+        @media (prefers-color-scheme: dark){
+            background-color: #1b1a1a;
+            transition: all .25s linear;
+            color: #ffffff;
+        }
     }
 
     h1{

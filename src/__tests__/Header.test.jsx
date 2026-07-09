@@ -16,7 +16,7 @@ describe("Header Component", () => {
         const HeaderTitle = screen.getByText(/¡Suscríbete a nuestro newsletter!/i);
         expect(HeaderTitle).toBeInTheDocument();
 
-        const HeaderLogo = screen.getByAltText(/Logo/i);
+        const HeaderLogo = screen.getByAltText("Logo de Caras para Header");
         expect(HeaderLogo).toBeInTheDocument();
 
         const HeaderSubtitle = screen.getByText(/Recibe en tu correo las últimas novedades,/i);

@@ -8,19 +8,21 @@ const Footer = ({}) => {
     return (
         <AppFooter>
             <IMGLogoContainer>
-                <IMGLogo src={whiteLogo} alt="Logo" />
+                <IMGLogo src={whiteLogo} alt="Logo de Caras para footer" />
             </IMGLogoContainer>
-            <a>Acerca de nosotros</a>
-            <a>Política de Privacidad</a>
-            <a>Términos y Condiciones</a>
+            
+                <a>Acerca de nosotros</a>
+                <a>Política de Privacidad</a>
+                <a>Términos y Condiciones</a>
+            
             <SocialMediaContainer>
-                <a href="https://www.facebook.com/Revista.Caras">
+                <a href="https://www.facebook.com/Revista.Caras" aria-label="Facebook de CARAS">
                     <IMGLogo src={facebookLogo} alt="facebook logo" />
                 </a>
-                <a href="https://twitter.com/carasmexico">
+                <a href="https://twitter.com/carasmexico" aria-label="X de CARAS">
                     <IMGLogo src={xLogo} alt="x logo" />
                 </a>
-                <a href="https://www.instagram.com/carasmexico/">
+                <a href="https://www.instagram.com/carasmexico/" aria-label="Instagram de CARAS">
                     <IMGLogo src={instagramLogo} alt="instagram logo" />
                 </a>
             </SocialMediaContainer>

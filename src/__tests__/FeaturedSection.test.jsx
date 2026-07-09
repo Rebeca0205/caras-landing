@@ -19,7 +19,7 @@ describe("FeaturedSection Component", () =>{
 
 
 
-        const FeaturedIMG1 = screen.getByAltText("Noticias");
+        const FeaturedIMG1 = screen.getByAltText("Periodico con noticias");
         expect(FeaturedIMG1).toBeInTheDocument();
 
         const FeaturedSubtitles1 = screen.getByText("Sé el primero en enterarte:");
@@ -28,7 +28,7 @@ describe("FeaturedSection Component", () =>{
 
 
 
-        const FeaturedIMG2 = screen.getByAltText("Sin Spam");
+        const FeaturedIMG2 = screen.getByAltText("Carta de Spam con un simbolo de prohibido");
         expect(FeaturedIMG2).toBeInTheDocument();
 
         const FeaturedSubtitles2 = screen.getByText("Sin spam, solo valor:");
@@ -38,7 +38,7 @@ describe("FeaturedSection Component", () =>{
 
         
 
-        const FeaturedIMG3= screen.getByAltText("Ofertas");
+        const FeaturedIMG3= screen.getByAltText("Mano ofreciendo ofertas");
         expect(FeaturedIMG3).toBeInTheDocument();
 
         const FeaturedSubtitles3 = screen.getByText("Ofertas y descuentos especiales:");

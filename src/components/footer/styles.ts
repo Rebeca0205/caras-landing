@@ -21,7 +21,7 @@ const IMGLogo = styled.img`
     height: 100%;
 `
 
-const SocialMediaContainer = styled.div`
+const SocialMediaContainer = styled.nav`
     width: 7rem;
     display: flex;
     justify-content: space-between;

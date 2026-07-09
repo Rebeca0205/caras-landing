@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Banner, ButtonForm, ErrorMessage, FormWithStyles, InputForm, LabelForm, SuccessMessage } from './styles';
+import { Banner, ButtonForm, ErrorMessage, FormWithStyles, InputForm, InputLabel, LabelForm, SuccessMessage } from './styles';
 
 type FormState = {
     username: string;
@@ -67,10 +67,11 @@ const SuscriptionForm = () => {
     };
 
     return (
-        <Banner>
-            <FormWithStyles onSubmit={handleSubmit} noValidate>
-                <LabelForm htmlFor="titulo">FORMULARIO DE SUSCRIPCIÓN</LabelForm>
+        <Banner role='banner'>
+            <FormWithStyles onSubmit={handleSubmit} noValidate role="form" aria-labelledby="Titulo-de-Suscripcion">
+                <LabelForm id='Titulo-de-Suscripcion'>FORMULARIO DE SUSCRIPCIÓN</LabelForm>
 
+                <InputLabel htmlFor='username'>Nombre:</InputLabel>
                 <InputForm 
                 type="text" 
                 id="username" 
@@ -80,6 +81,7 @@ const SuscriptionForm = () => {
                 onChange={(e) => handleInputChange(e)}
                 required />
 
+                <InputLabel htmlFor='email'>Correo:</InputLabel>
                 <InputForm 
                 type="email" 
                 id="email" 
@@ -89,13 +91,13 @@ const SuscriptionForm = () => {
                 onChange={(e) => handleInputChange(e)}
                 required/>
                   
-                <ButtonForm type="submit">Enviar</ButtonForm>
+                <ButtonForm type="submit" aria-label='Enviar formulario de suscripcion' arial-haspopup="dialog">Enviar</ButtonForm>
 
                 {message.visible && (
                     message.type === "success" ? (
-                    <SuccessMessage>{message.text}</SuccessMessage>
+                    <SuccessMessage role="dialog">{message.text}</SuccessMessage>
                     ) : (
-                        <ErrorMessage>{message.text}</ErrorMessage>
+                        <ErrorMessage role="dialog">{message.text}</ErrorMessage>
                     )
                 )}
             </FormWithStyles>

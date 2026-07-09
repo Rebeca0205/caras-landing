@@ -13,7 +13,7 @@ describe("Footer Component", () =>{
             </ThemeProvider>
         );
 
-        const FooterLogo = screen.getByAltText("Logo");
+        const FooterLogo = screen.getByAltText("Logo de Caras para footer");
         expect(FooterLogo).toBeInTheDocument();
 
         const FooterText = screen.getByText(/Acerca de nosotros/i);
